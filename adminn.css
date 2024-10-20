@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: rgba(88, 88, 245, 0.2); /* Optional background color for the body */
+}
+
+.navbar {
+    width: 100%;
+    background-color: #5c6bc0; /* Darker blue for navbar background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding for spacing */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    height: 70px;
+}
+
+.navuladmin {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin: 0; /* Reset margin for list */
+}
+
+.navheading {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.adminheading {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Adjusted for better positioning */
+}
+
+.nava {
+    color: rgb(221, 212, 212); /* Light text color */
+    padding: 10px 15px; /* Padding for clickable area */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    text-decoration: none;
+}
+
+.nava:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+}
+
+.dropdown {
+    position: relative; /* Positioning for dropdown */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Dark background for dropdown */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(221, 212, 212);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #454343; /* Darker hover effect for dropdown items */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.logoo {
+    margin-left: 20px; /* Adjusted for better alignment */
+    width: 125px;
+    cursor: pointer;
+}

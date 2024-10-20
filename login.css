@@ -1,0 +1,95 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.loginform{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:flex-start;
+}
+.loginform-container{
+    width: 50%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+     background-color: #Ffff; 
+}
+.loginimage-container{
+    width: 50%;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    background-color:#ffe9e7 ; 
+}
+.loginprojectname{
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    margin-top: 30px;
+    margin-left: 180px;
+    color: rgb(58, 57, 57);
+
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.logintot{
+    width:90%;
+    height: 35px;
+    border-radius: 6px;
+    border: 1px solid rgb(218, 218, 218);
+    outline: none;
+    background-color:white;
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+.loginicon{
+    width:15px;
+    object-fit: contain;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* height: 35px; */
+    border-radius: 17px;
+}
+.loginname{
+    width:90%;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+.submitlogin{
+    width:90%;
+    height: 35px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color:#f3c8c4 ; 
+    color: white;
+    font-weight: 700;
+}
+.loginhead{
+    margin: 30px;
+    color: rgb(58, 57, 57);
+
+}
+
+.login-container{
+    display: flex;
+    flex-direction: row;
+      
+}
+.login-image{
+     width: 50%;
+     height: 50%;
+     display: flex;
+     align-items: center;
+     margin: 180px; 
+     margin-top: 110px;
+
+}

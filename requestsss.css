@@ -1,0 +1,54 @@
+.navbar {
+    background-color: rgba(88, 88, 245, 0.8); /* Adjust navbar background color */
+    padding: 10px 20px; /* Add padding for spacing */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.navuladmin {
+    list-style-type: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display items in a row */
+    gap: 15px; /* Space between menu items */
+}
+
+.navuladmin li {
+    position: relative; /* For dropdown positioning */
+}
+
+.nava {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Add padding for clickable area */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.nava:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Positioning for dropdown */
+    background-color: white; /* Dropdown background */
+    min-width: 160px; /* Set min width */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Dropdown shadow */
+    z-index: 1; /* Ensure dropdown is on top */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+    color: black; /* Dropdown text color */
+    padding: 12px 16px; /* Padding for dropdown items */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Block display for dropdown items */
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(88, 88, 245, 0.1); /* Dropdown item hover effect */
+}

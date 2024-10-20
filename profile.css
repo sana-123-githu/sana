@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar{
+    width: 100%;
+     background-color: #333;
+     color: rgb(221, 212, 212);
+     /* padding: 35px 0; */
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     /* margin-top: 50px; */
+ } 
+ .navbar ul li{
+     list-style: none;
+     display: inline-block;
+     margin:0 20px;
+     position: relative;
+     margin-right: 45px;
+ }
+ .navbar ul li a{
+     text-decoration: none;
+     color: rgb(221, 212, 212);
+     letter-spacing: 2px;
+     font-weight: bold;
+     font-size: 13px;
+ }
+ .navbar ul li::after{
+     content: '';
+     height: 3px;
+     width:0;
+     background: black;
+     position: absolute;
+     left:0;
+     bottom: -10px;
+     transition: 0.5s;
+ }
+ .navbar ul li:hover::after{
+     width: 100%;
+ 
+ }
+ .logo{
+     margin-left: 45px;
+     width: 125px;
+     cursor: pointer;
+ 
+ }
+
+/* Profile Section */
+.profile-section {
+    padding: 50px;
+    background-color: #fff;
+    margin: 50px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.profile-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f0c040;
+}
+
+.user-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.profile-actions {
+    text-align: center;
+}
+
+.profile-actions .btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.profile-actions .btn:hover {
+    background-color: #f0c040;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 50px;
+}
+
+footer .footer-links {
+    margin-top: 10px;
+}
+
+footer .footer-links a {
+    color: #f0c040;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-links a:hover {
+    color: #fff;
+}

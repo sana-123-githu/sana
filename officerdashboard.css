@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+.navbar{
+   width: 100%;
+    
+    /* padding: 35px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	/* margin-top: 50px; */
+} 
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    position: relative;
+	margin-right: 45px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(221, 212, 212);
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width:0;
+    background: black;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+.logo{
+    margin-left: 45px;
+    width: 125px;
+    cursor: pointer;
+
+}
+.container{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Assets/policestationaluva.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.contain{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(221, 212, 212);
+}
+.contain h1{
+    color: rgb(221, 212, 212);
+    font-size:45px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.contain p{
+    margin: 20px auto;
+    font-weight: 100;
+    color: rgb(221, 212, 212);
+    line-height: 25px;
+}
+button{
+    width: 180px;
+    font-size: 12px;
+    padding: 15px 0;
+    text-align: center;
+    color:rgb(221, 212, 212);
+    border: 2px solid black ;
+    border-radius: 20px;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+    
+    margin: 20 10px;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: black;
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}

@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #075e54; /* WhatsApp Green */
+    padding: 10px;
+}
+
+.navbar .logoo {
+    height: 40px; /* Adjust logo size as needed */
+    margin-right: 20px;
+}
+
+.navuladmin {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.nava {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Rounded corners */
+    outline: none;
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    border-color: #075e54; /* WhatsApp Green */
+}
+
+button {
+    background-color: #075e54; /* WhatsApp Green */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #128C7E; /* Darker green on hover */
+}
+
+h2 {
+    margin: 20px;
+    color: #333;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    max-width: 70%; /* Limit message width */
+    word-wrap: break-word; /* Wrap long words */
+}
+
+.right {
+    background-color: #dcf8c6; /* Light green for sender's messages */
+    align-self: flex-end; /* Align messages to the right */
+}
+
+.left {
+    background-color: #ffffff; /* White for receiver's messages */
+    align-self: flex-start; /* Align messages to the left */
+}
+
+/* Chat container for better alignment */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-height: 70vh; /* Limit height of chat */
+    overflow-y: auto; /* Scroll if content overflows */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}

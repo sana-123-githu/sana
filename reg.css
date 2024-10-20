@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&displ');
+:root{
+	   --main-color:#d271c5;
+	   --secondary-color: #df90d4;
+	   --lighter-color:#e0ede7;
+		--Light-color:#b0b0c0;
+		--dark-color:#52505e;
+		--font-smaller: 14px;
+		--font-bigger: 20px
+}
+*{
+	margin: 0;
+    padding: 0;
+}
+*,::before,::after {
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: "Nunito",sans-serif;
+	font-size: 16px;
+	font-weight: 400; 
+	line-height: 1.8; 
+	color: var(--dark-color);
+	/*background: var(--dark-color);*/
+}
+a{
+text-decoration: none;
+color: inherit;
+}
+ul{
+list-style: none;
+}
+h1,h2,h3{
+font-weight: 700; 
+line-height: 1.25;
+margin: 0 0 0.5em;
+}
+img{
+max-width:100%;
+vertical-align: middle;
+}
+.container{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 2em;
+}
+.form-box{
+	display: flex;
+	flex-direction: column;
+	margin-top: 5em;
+	border: 8px solid var(--lighter-color);
+	border-radius: 15px;
+	background-color: #faf9ff;
+}
+.form-box .progress{
+	position:relative;
+	padding: 1em;
+}
+.logo{
+	font-size: 1.75em;
+	font-weight: 800;
+	color: var(--dark-color);
+	padding: 40px 48px;
+	text-align: center;
+}
+.logo span{
+	color: var(--main-color);
+}
+.progress ul.progress-steps{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+}
+.progress ul.progress-steps li{
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 2em;
+}
+.progress ul.progress-steps li > span{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	font-size: var(--font-smaller);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 1em;
+	border-radius: 50%;
+	background-color: var(--lighter-color);
+	z-index: 1;
+}
+.progress ul.progress-steps li.active > span{
+	color: white;
+	background-color: var(--main-color);
+	border: 4px solid var(--secondary-color);
+	z-index: 1;
+}
+.progress ul.progress-steps li p span{
+	font-size: var(--font-smaller);
+	color: var(--Light-color);
+	/*display: none;*/
+}
+.progress ul li p{
+	position: absolute;
+	top: -2em;
+	font-size: 12px;
+}
+.form-box form{
+	width: 100%;
+	padding: 3em 1em;
+	background-color: white;
+	border-radius: 30px 30px 15px 15px;
+}
+form > div{
+	max-width: 400px;
+	margin: 0 auto;
+}
+form > div p{
+    color: var(--Light-color);
+	margin-bottom: 2em; 
+}
+form > div > div{
+	display:flex;
+	flex-direction: column;
+	margin-bottom: 2em;
+}
+form :where(input,select){
+	height: 40px;
+	padding: 0 1em;
+	border-radius: 7px;
+	outline-color: var(--secondary-color);
+	border: 1px solid var(--lighter-color);
+	background-color: transparent;
+}
+form :where(textarea){
+	height: 80px;
+	padding: 0 1em;
+	border-radius: 7px;
+	outline-color: var(--secondary-color);
+	border: 1px solid var(--lighter-color);
+	background-color: transparent;
+}
+form label{
+	font-size: var(--font-smaller) ;
+	margin-bottom: 0.5em;
+	font-weight: 600;
+}
+
+form > div:not(.btn-group){
+	display: none;
+}
+form > div.active {
+	display: block;
+}
+
+.btn-group{
+	display: flex;
+	flex-wrap:wrap;
+	gap: 1em;
+	margin-left: 5.5em;
+}
+.btn-group [class*="btn-"]{
+	background-color: var(--main-color);
+	color: white;
+	padding: 1em 2.5em;
+	border: 4px solid var(--secondary-color);
+	border-radius: 30px;
+	cursor: pointer;
+	-webkit-transition: background-color .3s, border-color .3s ease-out;
+	transition: background-color .3s, border-color .3s ease-out;
+}
+.btn-group [class*="btn-"]:disabled{
+	background-color: var(--Light-color);
+	border-color: var(--lighter-color);
+	cursor:text;
+
+}
+.btn-group [class*="btn-"]:hover:not(:disabled){
+	background-color: var(--dark-color);
+	border-color: var(--Light-color);
+	
+}
+::placeholder{
+	color: var(--Light-color);
+}
+.voice-recording {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid var(--lighter-color);
+    border-radius: 8px;
+    background-color: #faf9ff; /* Match the form background color */
+}
+
+.voice-recording h3 {
+    margin-bottom: 10px;
+    font-size: var(--font-bigger);
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.voice-recording button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+    font-size: var(--font-smaller);
+    margin-right: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.voice-recording button:disabled {
+    background-color: var(--Light-color);
+    cursor: not-allowed;
+}
+
+.voice-recording button:hover:not(:disabled) {
+    background-color: var(--dark-color);
+}
+
+.voice-recording audio {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid var(--lighter-color);
+}
+
+@media screen and (min-width:768px) {
+	.form-box{
+		flex-direction: row;
+	}
+	.form-box .progress{
+		flex: 1 0 35%;
+		min-width: 300px;
+		padding: 3em;
+	}
+	.logo{
+		margin: -48px -48px 48px;
+	}
+	.progress ul.progress-steps{
+		flex-direction: column;
+		gap: 0;
+	}
+	.progress ul.progress-steps li:not(:last-child)::before{
+		content: '';
+		position: absolute;
+		left: 20px;
+		top: 30px;
+		width:2px;
+		height: 65px;
+		background-color: var(--lighter-color);
+	}
+	.form-box form{
+		padding: 3em;
+		border-radius: 0 15px 15px 0;
+	}
+	.progress ul li p{
+		position: relative;
+		top: auto;
+		font-size: inherit;
+	}
+	.progress ul li p span{
+		display: block;
+	}
+}
+nav{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.navlinks{
+	width: 90%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navlinks img{
+	width: 140px;
+	margin-top: 40px;
+}
+.Links{
+	width: 35%;
+	height: 100%;
+	margin-top: 50px;
+}
+.Links ul{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.Links ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    position: relative;
+}
+.Links ul li a{
+    text-decoration: none;
+    color:var(--dark-color) ;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.Links ul li::after{
+    content: '';
+    height: 3px;
+    width:0;
+    background: #aa549f;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.Links ul li:hover::after{
+    width: 100%;
+
+}
